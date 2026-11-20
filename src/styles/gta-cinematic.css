@@ -1,0 +1,350 @@
+/* ==========================================================================
+   GTA VI cinematic — hero parallax (logo-mask reveal) + character sections
+   Import once:  src/main.tsx  ->  import './styles/gta-cinematic.css';
+   ========================================================================== */
+
+/* ---------------------------------- HERO --------------------------------- */
+/* ---------------------------------- HERO --------------------------------- */
+.gta-hero {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: 0;
+  background: #06050b;
+  color: #fff;
+}
+
+.gta-hero__stage {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  min-height: 520px;
+  overflow: hidden;
+  background: #06050b;
+}
+
+.gta-hero__mask {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  -webkit-mask-image: url('/images/big-hero-text.svg');
+  mask-image: url('/images/big-hero-text.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-size: 3500% 3500%;
+  mask-size: 3500% 3500%;
+
+  /* must match JS — bottom of the "A" */
+  -webkit-mask-position: 50% 58%;
+  mask-position: 50% 58%;
+}
+
+/* if masks are unsupported the artwork simply fills the frame */
+@supports not ((mask-image: url('/images/big-hero-text.svg')) or (-webkit-mask-image: url('/images/big-hero-text.svg'))) {
+  .gta-hero__mask {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+.gta-hero__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+  will-change: transform;
+}
+
+.gta-hero__veil {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 90% 65% at 50% 120%, rgba(255, 46, 147, 0.42), transparent 62%),
+    radial-gradient(ellipse 60% 50% at 6% 108%, rgba(255, 138, 61, 0.32), transparent 60%),
+    linear-gradient(to top, rgba(6, 5, 11, 0.9) 0%, rgba(6, 5, 11, 0.5) 32%, rgba(6, 5, 11, 0.06) 62%, rgba(6, 5, 11, 0.35) 100%);
+}
+
+/* darkens behind the window while it closes */
+.gta-hero__shadow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: #06050b;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gta-hero__vi {
+  position: absolute;
+  z-index: 2;
+  top: 46%;
+  right: clamp(4px, 2.5vw, 44px);
+  transform: translateY(-50%);
+  font-family: var(--font-display, 'Round Bold', system-ui, sans-serif);
+  font-size: clamp(8rem, 22vw, 20rem);
+  font-weight: 900;
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+  background: linear-gradient(160deg, #8b3dff 0%, #ff4f7a 52%, #ff8a3d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0.22;
+  pointer-events: none;
+  user-select: none;
+  will-change: transform, opacity;
+}
+
+.gta-hero__content {
+  position: absolute;
+  z-index: 4;
+  left: clamp(20px, 5vw, 72px);
+  right: clamp(20px, 5vw, 72px);
+  bottom: clamp(28px, 5vh, 52px);
+  max-width: 660px;
+}
+
+.gta-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gta-hero__cue {
+  position: absolute;
+  z-index: 4;
+  right: clamp(18px, 4vw, 48px);
+  bottom: clamp(28px, 6vh, 56px);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.66rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.62);
+  pointer-events: none;
+}
+
+.gta-hero__cue i {
+  display: block;
+  width: 46px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75), transparent);
+}
+
+/* portrait screens: bigger window + bigger full-bleed scale */
+@media (max-aspect-ratio: 1/1) {
+  .gta-hero {
+    --hero-mask-w: 58%;
+    --hero-mask-scale: 4.8;
+  }
+  .gta-hero__cue {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gta-hero__mask {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+/* ------------------------------ CHARACTERS ------------------------------- */
+.gta-page {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: #07060d;
+  color: #fff;
+  overflow-x: clip; /* `clip`, not `hidden`: keeps pinned sections working */
+}
+
+.gta-page__head {
+  max-width: 980px;
+  padding: clamp(26px, 6vh, 72px) clamp(20px, 5vw, 64px) clamp(8px, 2vh, 20px);
+}
+
+.gta-page__kicker {
+  margin: 0;
+  color: var(--color-hot, #ff2e93);
+  font-size: 0.7rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.gta-page__title {
+  margin: 8px 0 14px;
+  font-size: clamp(2rem, 6.4vw, 4.2rem);
+  line-height: 1.04;
+}
+
+.gta-page__lead {
+  margin: 0;
+  max-width: 62ch;
+  color: #c7cbd4;
+  font-size: clamp(0.95rem, 1.7vw, 1.08rem);
+  line-height: 1.65;
+}
+
+/* scroll-scrubbed cinematic */
+.gta-vid {
+  position: relative;
+  height: 100svh;
+  min-height: 480px;
+  overflow: hidden;
+  background: #050409;
+}
+
+.gta-vid__el {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gta-vid__shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(5, 4, 9, 0.92) 0%, rgba(5, 4, 9, 0.12) 45%, rgba(5, 4, 9, 0.5) 100%);
+}
+
+.gta-vid__label {
+  position: absolute;
+  left: clamp(20px, 5vw, 64px);
+  bottom: clamp(30px, 8vh, 76px);
+  max-width: 44ch;
+}
+
+.gta-vid__note {
+  margin: 0 0 8px;
+  font-size: 0.74rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.gta-vid__name {
+  margin: 0;
+  font-size: clamp(1.6rem, 4.6vw, 3rem);
+  line-height: 1.04;
+}
+
+/* character profile */
+.gta-char {
+  position: relative;
+  display: grid;
+  gap: clamp(26px, 4vw, 54px);
+  padding: clamp(56px, 9vw, 130px) clamp(20px, 5vw, 64px);
+}
+
+@media (min-width: 1024px) {
+  .gta-char {
+    grid-template-columns: 1.02fr 0.98fr;
+    align-items: start;
+  }
+  .gta-char--flip .gta-char__text {
+    order: 2;
+  }
+}
+
+.gta-char__text {
+  max-width: 60ch;
+  padding: clamp(4px, 1vw, 14px);
+  background: radial-gradient(ellipse at 16% 16%, rgba(17, 17, 23, 0.95), transparent 72%);
+}
+
+.gta-char__name {
+  margin: 0 0 12px;
+  font-family: var(--font-display, 'Round Bold', system-ui, sans-serif);
+  font-size: clamp(2.2rem, 8vw, 5.2rem);
+  line-height: 0.94;
+  text-transform: uppercase;
+  background: linear-gradient(120deg, #fff9cb 0%, #ffb0c4 55%, #ff8a3d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gta-char__quote {
+  margin: 0 0 16px;
+  color: #ffb0c4;
+  font-size: clamp(1.05rem, 2.4vw, 1.5rem);
+  line-height: 1.35;
+}
+
+.gta-char__bio {
+  margin: 0 0 12px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(0.92rem, 1.6vw, 1.02rem);
+  line-height: 1.7;
+}
+
+.gta-char__stack {
+  display: grid;
+  gap: clamp(12px, 2vw, 20px);
+  will-change: transform;
+}
+
+.gta-char__shot {
+  margin: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.gta-char__shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.gta-char__shot:hover img {
+  transform: scale(0.97);
+}
+
+.gta-char__shot--tall {
+  aspect-ratio: 4 / 5;
+}
+
+.gta-char__shot--wide {
+  aspect-ratio: 16 / 10;
+}
+
+.gta-page__cta {
+  padding: clamp(20px, 6vw, 60px) clamp(20px, 5vw, 64px) clamp(72px, 12vw, 150px);
+  text-align: center;
+}
+
+.gta-page__cta h2 {
+  margin: 0 0 18px;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.gta-page__cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gta-vid {
+    height: 100svh;
+  }
+  .gta-char__stack {
+    transform: none !important;
+  }
+}

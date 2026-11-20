@@ -1,0 +1,16 @@
+{
+  "name": "Explore Leonida - Unofficial GTA 6 Guide",
+  "short_name": "Explore Leonida",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0418",
+  "theme_color": "#ff2e93",
+  "description": "Unofficial GTA 6 guide: PS5 cheats with verification status, review scores, interactive map, weapons database, and Metacritic 99 roundup.",
+  "icons": [
+    {
+      "src": "/ExploreLeonidaicon.png",
+      "sizes": "512x512 192x192 any",
+      "type": "image/png"
+    }
+  ]
+}

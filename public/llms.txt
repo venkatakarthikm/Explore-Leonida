@@ -1,0 +1,28 @@
+# Explore Leonida
+
+> Unofficial, fact-checked guide to Grand Theft Auto VI (PS5 / Xbox Series X|S). Cheat codes with verification status, review scores with sources, Metacritic 99 roundup, weapons database, character dossiers, interactive atlas, comparisons, buying and preload guides.
+
+Last updated: 2026-11-20
+
+## Core pages
+- [Home](https://leonidaguide.com/): overview, stat strip, quick answers
+- [GTA 6 Cheats PS5 (verified vs unverified)](https://leonidaguide.com/cheats/ps5): every reported code with status badges and verification logs
+- [GTA 6 Review Scores](https://leonidaguide.com/reviews): Metacritic 99, IGN 10/10, GameSpot 10/10, Eurogamer 5/5 and 17 critic outlet roundup
+- [Interactive Map & Atlas](https://leonidaguide.com/map): complete map of Leonida across 5 counties, 70+ landmarks, safehouses, Ammu-Nation armories, and GTADB telemetry
+- [Weapons & Arsenal Database](https://leonidaguide.com/weapons): over 40 confirmed firearms, revolvers, real-life counterparts, vehicle trunk armory, and Ammu-Nation lockers
+- [Characters & Cast](https://leonidaguide.com/characters): dual protagonists Jason Duval and Lucia Caminos, voice actors, and 50+ confirmed supporting cast
+- [Compare GTA games](https://leonidaguide.com/compare): GTA 6 vs GTA 5 (97), GTA IV (98), RDR2 (97), Cyberpunk 2077 (86)
+- [Where to buy](https://leonidaguide.com/buy): PlayStation Store $79.99, Xbox Store, Rockstar Store; Ultimate Edition $99.99+
+- [Preload & install](https://leonidaguide.com/preload): pre-download from 10 Nov 2026, midnight unlock 19 Nov 2026
+- [FAQ](https://leonidaguide.com/faq): comprehensive questions on release, weapons, characters, map, cheats, reviews, price, and technology
+- [Site Index](https://leonidaguide.com/site-index): directory of every page on Explore Leonida
+
+## Data (machine readable)
+- [cheats.json](https://leonidaguide.com/data/cheats.json): all cheat entries with status and sources
+- [reviews.json](https://leonidaguide.com/data/reviews.json): outlet scores and Metacritic score
+- [faq.json](https://leonidaguide.com/data/faq.json): all Q&As across weapons, characters, map, and cheats
+
+## Policy
+- Cheat codes are marked official, tested, or unverified. Unverified codes are labeled clearly with test caveats.
+- Scores are quoted strictly from each outlet's own published review with zero fabricated quotes or ratings.
+- Explore Leonida is an unofficial fan site not affiliated with Rockstar Games or Take-Two Interactive.

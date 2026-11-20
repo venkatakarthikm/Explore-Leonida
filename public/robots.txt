@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+Disallow: /search?
+
+# AI crawlers: explicitly allowed (we WANT to be cited by assistants)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://leonidaguide.com/sitemap.xml

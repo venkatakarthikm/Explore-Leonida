@@ -1,0 +1,104 @@
+# Explore Leonida - llms-full.txt (full markdown for LLM ingestion)
+# Generated 2026-11-20. Unofficial fan site; not affiliated with Rockstar Games.
+
+## GTA 6 Cheats PS5 (all entries UNVERIFIED as of 2026-11-20)
+Rockstar has not published an official GTA 6 cheat list. Codes below come from an
+owner-supplied guide screenshot of unknown origin. Statuses: all = unverified.
+TBC sequence = code not yet known.
+
+### Combat Cheats
+- Max Ammo - fills all ammo - DOWN, UP, RIGHT, DOWN, LEFT, LEFT, UP, UP, DOWN, LEFT - unlock: 25 bronze medals+ at shooting ranges - unverified
+- Infinite Ammo - DOWN, UP, RIGHT, DOWN, LEFT, LEFT, UP, DOWN, DOWN, DOWN - unlock: 25 silver medals+ - unverified
+- No Reload - DOWN, UP, RIGHT, DOWN, LEFT, LEFT, UP, DOWN, DOWN, UP - unlock: 25 gold medals - unverified
+- All Explosive Weapons - sequence TBC - unlock: throw 100 grenades - unverified
+- Incendiary Ammo - sequence TBC - unlock: burn 100 enemies - unverified
+- Exploding Bottles - sequence TBC - unlock: throw 100 molotovs - unverified
+- Explosive Shotgun (Mason & Keen Shortstraw) - sequence TBC - unlock: 100 explosive-damage hits - unverified
+- Haüners H-AT - sequence TBC - unlock: blow up 100 vehicles - unverified
+- Attack Force - DOWN, UP, LEFT, LEFT, RIGHT, DOWN, DOWN, UP, DOWN - unlock: finish the story - unverified
+- Exploding Balls - DOWN, UP, LEFT, LEFT, RIGHT, DOWN, DOWN, UP, RIGHT - unlock: 20 explosive-damage hits - unverified
+- Vehicle Force - DOWN, UP, LEFT, LEFT, RIGHT, DOWN, LEFT, UP, DOWN - unlock: 25 vehicle kills - unverified
+
+### Vehicle Cheats
+- Interstate Ambulance - sequence TBC - Progress menu - unverified
+- Airboat 09 - sequence TBC - 5 survival challenges - unverified
+- Bravado Banshee - sequence TBC - all combat challenges - unverified
+- Tuff BMX - sequence TBC - 5 fitness challenges - unverified
+- Maibatsu Boomazoom - LEFT, UP, RIGHT, DOWN, LEFT, LEFT, UP, LEFT - 5 shopping challenges - unverified
+- Nagasaki Carbon RS - sequence TBC - all exploration challenges - unverified
+- '65 Vapid Dominator - sequence TBC - all fitness challenges - unverified
+- Progen Emerus - sequence TBC - all vehicle challenges - unverified
+- Inflatable Flamingo - sequence TBC - destroy 50 cocaine flamingos - unverified
+- MTL Pumper - LEFT, UP, RIGHT, DOWN, LEFT, RIGHT, RIGHT, UP - Progress menu - unverified
+- Vapid Stanier G2 Taxi - sequence TBC - 5 sports challenges - unverified
+- Haüners P-996 Lazer - sequence TBC - all challenges - unverified
+- HVY Bulldozer - LEFT, UP, RIGHT, DOWN, LEFT, RIGHT, RIGHT, DOWN - Progress menu - unverified
+- Lapwing Mallard - sequence TBC - 5 vehicle challenges - unverified
+- Brimstone Golfer - sequence TBC - all sports challenges - unverified
+
+## GTA 6 Weapons & Arsenal Database (40+ Confirmed Weapons)
+GTA 6 implements a limited on-person inventory with weapon trunk armory mechanics.
+Car trunks store heavy weapons, shotguns, and long rifles.
+
+### Handguns & Revolvers
+- Hawk and Little Morgan Revolvers - Confirmed (Ultimate Edition) - Real Life: Smith & Wesson Model 29 / Schofield - Caliber: .44 Magnum
+- Girardi ES9 - Confirmed (Jason's signature pistol) - Real Life: SIG Sauer P226 - Caliber: 9x19mm Parabellum
+- Klose K17 - Confirmed (Lucia's signature pistol) - Real Life: Glock 17 - Caliber: 9x19mm Parabellum
+- Duke Arms Mustang .357 - Spotted (Trailers) - Real Life: Colt Python - Caliber: .357 Magnum
+- Heavy Pistol - Spotted - Real Life: Desert Eagle / 1911 variant
+- Nipper .38 - Spotted - Real Life: Snubnose Revolver
+- Hawk and Little Pistol - Spotted - Real Life: Browning Hi-Power
+
+### Rifles & Assault Rifles
+- Duke Arms 556 - Spotted - Real Life: Colt M4A1 / AR-15 - Caliber: 5.56x45mm NATO
+- Shrewsbury AKM - Spotted - Real Life: Kalashnikov AKM - Caliber: 7.62x39mm
+- Vom Feuer Carbine Rifle - Spotted - Real Life: HK416 / C8
+- Compact Rifle - Spotted - Real Life: AKS-74U / Draco
+
+### Shotguns
+- Moreland 850 - Spotted - Real Life: Remington 870 Pump-Action
+- Shrewsbury Pump Shotgun - Spotted - Real Life: Mossberg 590
+- Double Barrel Shotgun - Spotted - Real Life: Sawed-Off Side-by-Side 12-Gauge
+
+### Sniper Rifles & Heavy
+- Bolt Action Rifle - Spotted - Real Life: Remington 700 / Winchester Model 70
+- Shrewsbury Hunter - Spotted - Real Life: Hunting scoped rifle
+- Combat MG - Spotted - Real Life: M249 SAW / PKM
+- Shrewsbury RPG - Spotted - Real Life: RPG-7
+- Shrewsbury Grenade Launcher - Spotted - Real Life: Milkor MGL 40mm
+
+### Tactical & Non-Lethal
+- Coil Shocker - Spotted - Real Life: Taser X26P Conducted Energy Weapon
+- Flashbang, Smoke Grenade, Sticky Bomb, Jerry Can, Molotov Cocktail
+- Baseball Bat, Golf Club, Pool Cue, Crowbar, Knife, Knuckle Dusters
+
+## GTA 6 Characters & Cast
+Dual protagonists operate across the state of Leonida.
+- Jason Duval: Former military veteran operating around Key Lento and Keys smuggling boatyards.
+- Lucia Caminos: First female playable protagonist in 3D GTA history; released on parole from Leonida Penitentiary.
+- Cal Hampton: Jason's associate, Coast Guard communications listener (Bobby Moynihan).
+- Boobie Ike: "Jack of Hearts" nightlife and recording studio kingpin in Vice City (Mike Forbs).
+- Dre'Quan Priest: Founder of Only Raw Records (Naiqui Macabroad).
+- Brian Heder: Golden age Keys drug runner and boatyard operator (Stephen Root).
+- Raul Bautista: Seasoned bank robber and heist coordinator.
+- Real Dimez (Bae-Luxe & Roxy): Social media rappers signed to Only Raw Records.
+- Strangers & Freaks: Andy, Billy, Kenton, Kirk (Skunk Ape hunter), Pilot Pete, Randy.
+
+## GTA 6 Map & World (State of Leonida)
+Leonida is estimated at 2.5x to 3x the scale of GTA V with 5 counties and over 65% enterable interiors.
+1. Vice-Dale County: Downtown Vice City, Vice Beach, Ocean Drive, Starfish Island, VCIA International Airport.
+2. Kelly County: Industrial shipping center of Port Gellhorn, Ambrosia sugar mills, Route 628.
+3. Mariana County & The Keys: Tropical barrier islands (Key Lento, Big Pine) connected by the Overseas Highway.
+4. Leonard County: Freshwater reservoir around Lake Leonida and quiet lakeside townships.
+5. Lummox County: Northern wilderness, Mount Kalaga national park, and Dawson Dam.
+
+## GTA 6 Review Scores (Metacritic 99)
+- Metacritic: 99 - https://www.metacritic.com/game/grand-theft-auto-vi/
+- Outlets: IGN 10/10, VGC 10/10, Empire 5/5, Forbes 10/10, Eurogamer 5/5, ComicBook 5/5, Digital Spy 10/10, TechRadar 10/10, GameSpot 10/10, ScreenRant 10/10, Destructoid 10/10, Push Square 10/10, CGMagazine 10/10, GamesRadar 10/10, DualShockers 10/10, Game Informer 10/10, EDGE Magazine 10/10.
+
+## Key Facts
+- Launched 19 November 2026 on PlayStation 5 and Xbox Series X|S. No PC version at launch.
+- Physical copies are code-in-box download vouchers in retail editions.
+- Standard Edition $79.99 USD; Ultimate Edition $99.99+ USD.
+- Setting: State of Leonida, Vice City.
+- Franchise Metacritic scores: GTA III (97), Vice City (95), San Andreas (95), GTA IV (98), GTA V (97), GTA VI (99).
