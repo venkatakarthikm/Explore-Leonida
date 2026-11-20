@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ==========================================================================
-   LeonidaGuide — src/index.css  (Tailwind v4)
+   Explore Leonida - src/index.css (Tailwind v4)
    1) @theme        : colours, fonts, loader animations (generates utilities)
    2) @layer base   : html / body
    3) @layer components : .glass, .neon-btn, .chip ... (utilities can now override them)
@@ -132,7 +132,7 @@
 }
 
 /* ==========================================================================
-   CUSTOM SYNTHWAVE SCROLLBARS (Vertical & Horizontal — Universal)
+   CUSTOM SYNTHWAVE SCROLLBARS (Vertical & Horizontal - Universal)
    ========================================================================== */
 
 /* WebKit / Chromium (Chrome, Edge, Brave, Opera, Safari) */

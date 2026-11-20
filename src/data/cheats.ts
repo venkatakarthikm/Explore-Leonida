@@ -1,5 +1,5 @@
 /**
- * GTA 6 CHEATS — merged from 3 guides published around the 18–19 Nov 2026 launch.
+ * GTA 6 CHEATS - merged from 3 guides published around the 18-19 Nov 2026 launch.
  * Replace src/data/cheats.ts with this file.
  *
  * DATA INTEGRITY RULES (do not break):
@@ -223,7 +223,7 @@ export const CHEAT_RULES = [
 ];
 
 // ---------------------------------------------------------------------------
-// Where the guides disagree (shown on the page — this is our credibility)
+// Where the guides disagree (shown on the page - this is our credibility)
 // ---------------------------------------------------------------------------
 export const CHEAT_DISPUTES = [
   { cheat: 'Max Ammo', text: 'Requirement is 25 Bronze shooting-range medals in most guides, but PC Gamer lists 20.' },
@@ -241,7 +241,7 @@ export const BEST_CHEATS = {
 };
 
 // ---------------------------------------------------------------------------
-// FAQ — answers use only what the 3 guides say; anything unknown says so.
+// FAQ - answers use only what the 3 guides say; anything unknown says so.
 // ---------------------------------------------------------------------------
 const C = CHEAT_COUNTS;
 export const CHEAT_FAQ: { q: string; a: string }[] = [

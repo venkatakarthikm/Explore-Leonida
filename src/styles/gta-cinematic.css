@@ -1,5 +1,5 @@
 /* ==========================================================================
-   GTA VI cinematic — hero parallax (logo-mask reveal) + character sections
+   GTA VI cinematic - hero parallax (logo-mask reveal) + character sections
    Import once:  src/main.tsx  ->  import './styles/gta-cinematic.css';
    ========================================================================== */
 
@@ -38,7 +38,7 @@
   -webkit-mask-size: 3500% 3500%;
   mask-size: 3500% 3500%;
 
-  /* must match JS — bottom of the "A" */
+  /* must match JS - bottom of the "A" */
   -webkit-mask-position: 50% 58%;
   mask-position: 50% 58%;
 }

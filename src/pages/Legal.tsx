@@ -55,7 +55,7 @@ const CONTENT: Record<string, { title: string; body: React.ReactNode }> = {
     title: 'Contact',
     body: (
       <div className="glass" style={{ padding: '24px', fontSize: '0.92rem', color: 'rgba(255,255,255,0.8)', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '14px' }}>
-        <p>To contact the editorial team, report an erratum, or provide verified console gameplay footage of an unverified cheat, email us at: <a style={{ color: 'var(--color-hot)', textDecoration: 'none' }} href="mailto:contact@leonidaguide.com">contact@leonidaguide.com</a>.</p>
+        <p>To contact the editorial team, report an erratum, or provide verified console gameplay footage of an unverified cheat, email us at: <a style={{ color: 'var(--color-hot)', textDecoration: 'none' }} href="mailto:contact@exploreleonida.pages.dev">contact@exploreleonida.pages.dev</a>.</p>
         <p><strong>Cheat Submissions:</strong> When submitting newly discovered button combinations, please include: platform (PS5 / Xbox Series X), cheat effect, exact button sequence, and a link to unedited video proof showing the game hud response.</p>
         <p><strong>Intellectual Property &amp; DMCA:</strong> If you believe content hosted on Explore Leonida infringes your intellectual property, send notice with subject line "DMCA Notice" to ensure expedited processing within 2 business days.</p>
       </div>

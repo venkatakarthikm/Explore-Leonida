@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
     }
   }
 
-  const siteUrl = (env.SITE_URL || 'https://leonidaguide.com').replace(/\/$/, '');
+  const siteUrl = (env.SITE_URL || 'https://exploreleonida.pages.dev').replace(/\/$/, '');
   const siteName = env.SITE_NAME || 'Explore Leonida';
   const gaId = env.GA_ID || '';
 

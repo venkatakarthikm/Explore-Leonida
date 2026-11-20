@@ -108,7 +108,7 @@ export default function Cheats() {
 
   return (
     <>
-      <Seo title={`${CHEAT_META.title} — Explore Leonida`} description={CHEAT_META.description} path="/cheats/ps5" jsonLd={ld} ogImage="/og/cheats.png" />
+      <Seo title={`${CHEAT_META.title} | Explore Leonida`} description={CHEAT_META.description} path="/cheats/ps5" jsonLd={ld} ogImage="/og/cheats.png" />
       <Crumbs items={[{ name: 'Home', path: '/' }, { name: 'Cheats PS5', path: '/cheats/ps5' }]} />
       <PageHead
         h1="GTA 6 Cheat Codes for PS5 (All 61 Cheats)"

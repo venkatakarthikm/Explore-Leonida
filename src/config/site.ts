@@ -1,6 +1,6 @@
 export const SITE = {
   name: process.env.SITE_NAME || 'Explore Leonida',
-  url: (process.env.SITE_URL || 'https://leonidaguide.com').replace(/\/$/, ''),
+  url: (process.env.SITE_URL || 'https://exploreleonida.pages.dev').replace(/\/$/, ''),
   gaId: process.env.GA_ID || '',
   tagline: 'The unofficial Grand Theft Auto VI guide',
   description:

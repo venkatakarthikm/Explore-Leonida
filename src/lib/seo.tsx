@@ -19,6 +19,7 @@ export default function Seo({ title, description, path, jsonLd, noindex, ogImage
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={url} />
+      <meta name="google-site-verification" content="4CzNBpwPSGD0nwfTUSD5zyA4hYjTHedhaMwUZiSv__4" />
       <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
