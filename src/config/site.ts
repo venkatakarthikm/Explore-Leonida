@@ -1,6 +1,11 @@
+const rawUrl = (process.env.SITE_URL || 'https://exploreleonida.pages.dev').replace(/\/$/, '');
+const siteUrl = rawUrl.replace('explore-leonida.pages.dev', 'exploreleonida.pages.dev');
+const rawName = process.env.SITE_NAME || 'Explore Leonida';
+const siteName = rawName.toLowerCase() === 'explore leonida' ? 'Explore Leonida' : rawName;
+
 export const SITE = {
-  name: process.env.SITE_NAME || 'Explore Leonida',
-  url: (process.env.SITE_URL || 'https://exploreleonida.pages.dev').replace(/\/$/, ''),
+  name: siteName,
+  url: siteUrl,
   gaId: process.env.GA_ID || '',
   tagline: 'The unofficial Grand Theft Auto VI guide',
   description:

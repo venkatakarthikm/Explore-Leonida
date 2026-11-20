@@ -27,6 +27,9 @@ function parseEnv(filePath) {
 const fileEnv = parseEnv(envPath);
 const exampleEnv = parseEnv(envExamplePath);
 
-export const SITE_URL = (process.env.SITE_URL || fileEnv.SITE_URL || exampleEnv.SITE_URL || 'https://exploreleonida.pages.dev').replace(/\/$/, '');
-export const SITE_NAME = process.env.SITE_NAME || fileEnv.SITE_NAME || exampleEnv.SITE_NAME || 'Explore Leonida';
+const rawSiteUrl = (process.env.SITE_URL || fileEnv.SITE_URL || exampleEnv.SITE_URL || 'https://exploreleonida.pages.dev').replace(/\/$/, '');
+export const SITE_URL = rawSiteUrl.replace('explore-leonida.pages.dev', 'exploreleonida.pages.dev');
+
+const rawSiteName = process.env.SITE_NAME || fileEnv.SITE_NAME || exampleEnv.SITE_NAME || 'Explore Leonida';
+export const SITE_NAME = rawSiteName.toLowerCase() === 'explore leonida' ? 'Explore Leonida' : rawSiteName;
 export const GA_ID = process.env.GA_ID || fileEnv.GA_ID || exampleEnv.GA_ID || '';

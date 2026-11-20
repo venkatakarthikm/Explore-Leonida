@@ -11,8 +11,10 @@ export default defineConfig(({ mode }) => {
     }
   }
 
-  const siteUrl = (env.SITE_URL || 'https://exploreleonida.pages.dev').replace(/\/$/, '');
-  const siteName = env.SITE_NAME || 'Explore Leonida';
+  const rawSiteUrl = (env.SITE_URL || 'https://exploreleonida.pages.dev').replace(/\/$/, '');
+  const siteUrl = rawSiteUrl.replace('explore-leonida.pages.dev', 'exploreleonida.pages.dev');
+  const rawSiteName = env.SITE_NAME || 'Explore Leonida';
+  const siteName = rawSiteName.toLowerCase() === 'explore leonida' ? 'Explore Leonida' : rawSiteName;
   const gaId = env.GA_ID || '';
 
   return {
