@@ -112,22 +112,20 @@ function drawSynthwave(accentColor, type) {
   };
 }
 
-const homePng = createPng(1200, 630, drawSynthwave([255, 46, 147], 'home'));
-fs.writeFileSync(path.resolve(outDir, 'home.png'), homePng);
+function writeOgImage(filename, drawFn) {
+  const filePath = path.resolve(outDir, filename);
+  if (fs.existsSync(filePath)) {
+    console.log(`[generate-og-images] Skipping existing custom OG image: ${filename}`);
+    return;
+  }
+  const png = createPng(1200, 630, drawFn);
+  fs.writeFileSync(filePath, png);
+  console.log(`[generate-og-images] Generated fallback: ${filename}`);
+}
 
-const cheatsPng = createPng(1200, 630, drawSynthwave([255, 138, 61], 'cheats'));
-fs.writeFileSync(path.resolve(outDir, 'cheats.png'), cheatsPng);
-
-const reviewsPng = createPng(1200, 630, drawSynthwave([139, 61, 255], 'reviews'));
-fs.writeFileSync(path.resolve(outDir, 'reviews.png'), reviewsPng);
-
-const charactersPng = createPng(1200, 630, drawSynthwave([255, 79, 122], 'characters'));
-fs.writeFileSync(path.resolve(outDir, 'characters.png'), charactersPng);
-
-const weaponsPng = createPng(1200, 630, drawSynthwave([255, 138, 61], 'weapons'));
-fs.writeFileSync(path.resolve(outDir, 'weapons.png'), weaponsPng);
-
-const mapPng = createPng(1200, 630, drawSynthwave([25, 230, 210], 'map'));
-fs.writeFileSync(path.resolve(outDir, 'map.png'), mapPng);
-
-console.log('[generate-og-images] Generated home.png, cheats.png, reviews.png, characters.png, weapons.png, map.png (1200x630)');
+writeOgImage('home.png', drawSynthwave([255, 46, 147], 'home'));
+writeOgImage('cheats.png', drawSynthwave([255, 138, 61], 'cheats'));
+writeOgImage('reviews.png', drawSynthwave([139, 61, 255], 'reviews'));
+writeOgImage('characters.png', drawSynthwave([255, 79, 122], 'characters'));
+writeOgImage('weapons.png', drawSynthwave([255, 138, 61], 'weapons'));
+writeOgImage('map.png', drawSynthwave([25, 230, 210], 'map'));
