@@ -38,13 +38,9 @@ const url = (loc, lastmod, priority, changefreq) =>
 
 const wrap = (body) => `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`;
 
-writeFileSync(resolve(OUT, 'sitemap-pages.xml'), wrap(PAGES.map(([p, lm, pr, cf]) => url(p, lm, pr, cf)).join('\n')));
+const sitemapContent = wrap(PAGES.map(([p, lm, pr, cf]) => url(p, lm, pr, cf)).join('\n'));
 
-writeFileSync(
-  resolve(OUT, 'sitemap.xml'),
-  `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-  `  <sitemap><loc>${base}/sitemap-pages.xml</loc><lastmod>${today}</lastmod></sitemap>\n` +
-  `</sitemapindex>\n`
-);
+writeFileSync(resolve(OUT, 'sitemap.xml'), sitemapContent);
+writeFileSync(resolve(OUT, 'sitemap-pages.xml'), sitemapContent);
 
-console.log('[generate-sitemap] wrote sitemap-pages.xml, sitemap.xml');
+console.log('[generate-sitemap] wrote sitemap.xml and sitemap-pages.xml with direct urlset');
